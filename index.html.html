@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoEduca - Jogo da Coleta Seletiva</title>
+
+```
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<div class="container">
+
+    <h1>♻️ EcoEduca</h1>
+
+    <p class="subtitulo">
+        Aprenda a separar corretamente os resíduos sólidos.
+    </p>
+
+    <div class="jogador">
+
+        <input
+            type="text"
+            id="nomeJogador"
+            placeholder="Digite seu nome">
+
+    </div>
+
+    <button id="startButton">
+        ▶️ Iniciar Jogo
+    </button>
+
+    <div class="painel">
+
+        <div class="card-painel">
+            Pontos<br>
+            <span id="pontos">0</span>
+        </div>
+
+        <div class="card-painel">
+            Nível<br>
+            <span id="nivel">1</span>
+        </div>
+
+        <div class="card-painel">
+            Tempo<br>
+            <span id="tempo">60</span>s
+        </div>
+
+        <div class="card-painel">
+            🏆 Recorde<br>
+            <span id="recorde">0</span>
+        </div>
+
+    </div>
+
+    <!-- RESÍDUO -->
+
+    <div class="residuo-box">
+
+        <img
+            id="imagemResiduo"
+            src="imagens/padrao.jpg"
+            alt="Imagem do Resíduo">
+
+        <h2 id="residuo">
+            Clique em Iniciar
+        </h2>
+
+    </div>
+
+    <div class="botoes">
+
+        <button id="brownButton">
+            🟤 Orgânico
+        </button>
+
+        <button id="greenButton">
+            🟢 Reciclável
+        </button>
+
+        <button id="blueButton">
+            ⚫ Rejeito
+        </button>
+
+    </div>
+
+    <div id="resultado"></div>
+
+    <div id="ranking">
+
+        <h2>🏆 Ranking Top 10</h2>
+
+        <ol id="listaRanking"></ol>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>

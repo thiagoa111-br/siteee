@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(135deg, #2e7d32, #81c784);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+
+    width: 100%;
+    max-width: 800px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+    text-align: center;
+}
+
+h1 {
+
+    color: #1b5e20;
+
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+}
+
+.container p {
+
+    color: #555;
+
+    font-size: 1.1rem;
+}
+
+#startButton {
+
+    margin-top: 25px;
+
+    background: #1b5e20;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    font-size: 1rem;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#startButton:hover {
+
+    background: #2e7d32;
+
+    transform: scale(1.05);
+}
+
+.painel {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.painel div {
+
+    background: #f5f5f5;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    color: #333;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+#residuo {
+
+    margin-top: 40px;
+
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+
+    color: #0d47a1;
+
+    background: #e3f2fd;
+
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+.botoes {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.botoes button {
+
+    border: none;
+
+    padding: 18px 25px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    color: white;
+
+    min-width: 180px;
+}
+
+.botoes button:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+#brownButton {
+
+    background: #8d6e63;
+}
+
+#greenButton {
+
+    background: #43a047;
+}
+
+#blueButton {
+
+    background: #546e7a;
+}
+
+#resultado {
+
+    margin-top: 35px;
+
+    min-height: 120px;
+
+    font-size: 1.2rem;
+
+    color: #222;
+
+    line-height: 1.8;
+}
+
+#resultado h2 {
+
+    color: #1b5e20;
+
+    margin-bottom: 15px;
+}
+
+#resultado h3 {
+
+    margin-top: 20px;
+
+    color: #1565c0;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        padding: 25px;
+    }
+
+    h1 {
+
+        font-size: 2.2rem;
+    }
+
+    .painel {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #residuo {
+
+        font-size: 1.5rem;
+    }
+
+    .botoes {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes button {
+
+        width: 100%;
+    }
+}
